@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab2fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <ImageView
+        android:id="@+id/pqp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/pqp_edit" />
+
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pqp"
+        android:gravity="left"
+        android:padding="10dip"
+        android:text="Nome: "
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/nomeInformado"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pqp"
+        android:gravity="left"
+        android:hint="Insira seu Nome"
+        android:padding="10dip"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/nome" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:padding="10dip"
+        android:text="Email: "
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/nomeInformado"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/emailInformado"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:hint="Insira seu Email"
+        android:padding="10dip"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/nomeInformado"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/nome" />
+
+    <TextView
+        android:id="@+id/telefone"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:padding="10dip"
+        android:text="Telefone: "
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/telefoneInformado"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:hint="Insira seu Telefone"
+        android:padding="10dip"
+        android:inputType="phone"
+        android:layout_below="@+id/emailInformado"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/email" />
+
+    <Button
+        android:id="@+id/mailButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Enviar Email"
+        android:layout_below="@id/telefoneInformado"
+        android:layout_marginBottom="83dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

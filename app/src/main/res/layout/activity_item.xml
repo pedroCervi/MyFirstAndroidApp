@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.avaapp.ItemActivity">
+
+    <TextView
+        android:id="@+id/tituloItem"
+        android:layout_width="353dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descricaoItem"
+        android:layout_width="350dp"
+        android:layout_height="337dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloItem" />
+
+
+
+</android.support.constraint.ConstraintLayout>
